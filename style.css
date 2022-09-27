@@ -118,6 +118,7 @@
 
 
 /* ******* ESERCIZIO 9 RISOLTO ******* */
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -129,13 +130,64 @@
     filter: sepia(80%) contrast(100%);
 }
 
+/* ******* ESERCIZIO 10 RISOLTO ******* */
 
 .ex-10-icon {
     font-size: 60px;
+    
+    animation-duration: 1s;
+    animation-name: spinning;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+@keyframes spinning{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/* ******* ESERCIZIO 11 RISOLTO ******* */
+
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    
+    animation-duration: 1s;
+    animation-name: spinning;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes spinning{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
